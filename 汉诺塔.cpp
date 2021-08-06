@@ -18,3 +18,4 @@ void mov(int n,char a,char b,char c)
      cout<<k<<":从"<<a<<"->"<<c<<endl;
      mov(n-1,b,a,c);
 }
+//汉诺塔问题
