@@ -1,3 +1,4 @@
+
 # YLFCY编译器
 想学编程，但苦于背不下那么多英语单词？这个软件可以让你用中文编程！
 软件的原理是先将中文代码转换为c++代码，然后再用c++编译。
@@ -12,3 +13,4 @@
 [0.4.1dev1帮助.txt](https://github.com/yulinfeng16/YLFCY-/files/8749442/default.txt)
 #
 存储库已于2022年5月24日更名为YLFCY-compiler。
+![IMG_20220611_170939_edit_24913001836301](https://user-images.githubusercontent.com/86186021/173181660-dc129b4e-1edc-455a-8cc3-2c03dde6b572.jpg)
