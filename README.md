@@ -1,5 +1,5 @@
 
-# YLFCY编译器<sup><sup><a href color="0x000000">PREVIEW</a></sup></sup>
+# YLFCY编译器<sup><sup><font color="gray">PREVIEW</font></sup></sup>
 想学编程，但苦于背不下那么多英语单词？这个软件可以让你用中文编程！
 软件的原理是先将中文代码转换为c++代码，然后再用c++编译。
 通过一年的开发，软件已经接近完成。
