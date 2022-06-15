@@ -1,0 +1,33 @@
+# Project: cpiTocppCONVERT_Master
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = cpiTocppCONVERT_Master_private.res
+OBJ      = cpitocppconvert.o $(RES)
+LINKOBJ  = cpitocppconvert.o $(RES)
+LIBS     = -L"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -m32
+INCS     = -I"D:/Dev-Cpp/MinGW64/include" -I"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/Dev-Cpp/MinGW64/include" -I"D:/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = cpiTocppCONVERT_Master.exe
+CXXFLAGS = $(CXXINCS) -m32
+CFLAGS   = $(INCS) -m32
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+cpitocppconvert.o: cpitocppconvert.cpp
+	$(CPP) -c cpitocppconvert.cpp -o cpitocppconvert.o $(CXXFLAGS)
+
+cpiTocppCONVERT_Master_private.res: cpiTocppCONVERT_Master_private.rc 
+	$(WINDRES) -i cpiTocppCONVERT_Master_private.rc -F pe-i386 --input-format=rc -o cpiTocppCONVERT_Master_private.res -O coff 
+
